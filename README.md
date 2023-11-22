@@ -6,4 +6,7 @@ Parser for the site https://online.metro-cc.ru/ for the cheese category
 <img src="images/libs_install.png">
 
 ## Usage example
-<img src="images/start.png">
+<img src="images/start.png"><br>
+
+## Json format (prodcut) example
+<img src="images/product_example.png">
