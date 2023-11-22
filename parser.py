@@ -67,7 +67,7 @@ def metro_parser() -> None:
                 brand = soup.find("a", class_="product-attributes__list-item-link").text.strip()
 
                 # adding data to the pull and logging the result of adding with time and percentage of completion
-                product_pool.append({"article": id, "title": title, "url": href, "price": old_price, "discout_price": new_price, "brand": brand})
+                product_pool.append({"article": int(id), "title": title, "url": href, "price": int(old_price), "discout_price": int(new_price), "brand": brand})
                 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
                 logging.info(f'parsed data = {round(product_add_index / 680, 2) * 100}%\n{product_pool[-1]}')
 
